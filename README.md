@@ -13,14 +13,45 @@ Versão mobile do **CuidadOnline**, criada com React Native, JavaScript e Expo. 
 
 O projeto também contém componentes reutilizáveis para botões, campos de texto, cabeçalhos, cartões, contêiner de tela e menu inferior. Todos os estilos usam `StyleSheet`.
 
-## Executar
+## Requisitos
+
+Antes de começar, instale:
+
+- [Node.js](https://nodejs.org/) 22.13 ou superior, que já inclui o npm.
+- [Expo Go](https://expo.dev/go) no celular, caso queira executar o aplicativo em um aparelho Android ou iOS.
+
+## Instalação e execução
+
+Depois de baixar ou clonar o projeto, abra o terminal na pasta do projeto:
+
+```bash
+cd CuidadoOnlineReact
+```
+
+Instale as dependências:
 
 ```bash
 npm install
+```
+
+Inicie o Expo:
+
+```bash
 npm start
 ```
 
-Depois, escaneie o QR Code com o Expo Go ou pressione `a` para Android e `w` para web.
+Quando o Expo iniciar:
+
+- Escaneie o QR Code com o aplicativo Expo Go para abrir no celular.
+- Pressione `a` no terminal para abrir em um emulador Android já configurado.
+- Pressione `w` no terminal para abrir no navegador.
+
+Também é possível iniciar diretamente pelo terminal:
+
+```bash
+npm run android
+npm run web
+```
 
 ## Estrutura principal
 
