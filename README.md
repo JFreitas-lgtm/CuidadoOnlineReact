@@ -22,16 +22,17 @@ Antes de começar, instale:
 
 ## Instalação e execução
 
-Depois de baixar ou clonar o projeto, abra o terminal na pasta do projeto:
+Clone o repositório e entre na pasta do projeto:
 
 ```bash
+git clone https://github.com/joaofreitas77/CuidadoOnlineReact.git
 cd CuidadoOnlineReact
 ```
 
-Instale as dependências:
+Instale exatamente as versões registradas no `package-lock.json`:
 
 ```bash
-npm install
+npm ci
 ```
 
 Inicie o Expo:
@@ -53,6 +54,12 @@ npm run android
 npm run web
 ```
 
+Para validar uma compilação web antes de publicar alterações:
+
+```bash
+npm run check
+```
+
 ## Estrutura principal
 
 - `src/app/`: telas e navegação com Expo Router.
@@ -60,3 +67,15 @@ npm run web
 - `src/context/`: estado compartilhado da aplicação.
 - `src/data/`: conteúdo educativo temporário.
 - `src/theme.js`: cores da identidade visual.
+
+## Versionamento
+
+Arquivos gerados, dependências, credenciais nativas e variáveis de ambiente não são enviados ao GitHub. Se o projeto passar a usar configurações locais, documente apenas nomes e valores fictícios em um arquivo `.env.example`.
+
+Fluxo básico para publicar alterações:
+
+```bash
+git add .
+git commit -m "descreva a alteração"
+git push origin main
+```
